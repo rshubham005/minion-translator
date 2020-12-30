@@ -8,15 +8,49 @@
 {
     background-color: rgb(255, 239, 11);
     text-align: center;
-    height: 10vh;
+    height: 15vh;
 }
 .main
 {
-    padding: 20px 0px ;
+    padding: 10px 0px ;
     text-align: center;
 }
 textarea
 {
-    height: 20vh;
-    width: 80%;
+    height: 18vh;
+    width: 60%;
+    border:5px solid rgba(255, 11, 11, 0.473);
+    border-radius: 20px ;
+    padding: 15px 0px ;
+}
+h1{
+    padding: 10px 0px ;
+    font-size:55px ;
+    font-weight: 900;
+    font-family: 'Dancing Script', cursive;
+}
+h2
+{
+    font-size:55px ;
+    font-weight: 900;
+    font-family: 'Dancing Script', cursive;
+}
+.btn
+{
+    background-color: rgb(255, 255, 5);
+    padding: 10px 50px ;
+    margin: 10px 0px ;
+    border:3px solid rgba(255, 11, 11, 0.473);
+    border-radius: 35px ;
+    font-size: 20px;
+    font-weight: 700;
+    color: rgb(228, 42, 42);
+}
+.btn:hover
+{
+    background-color: rgb(231, 56, 56);
+    color: white;
+    transition: 1s;
+    padding: 15px 60px ;
+    border-radius: 45px ;
 }

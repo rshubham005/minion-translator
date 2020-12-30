@@ -2,6 +2,11 @@ var input= document.querySelector("#input-text");
 var btn= document.querySelector("#translate-btn");
 var output= document.querySelector("#translated-text");
 btn.addEventListener("click",translate);
+function errorHandler(error)
+{
+    console.log("Some error occcured "+error)
+    alert("Some Error Occured please try after some time")
+}
 function translate()
 {
     var text=input.value;
@@ -10,13 +15,13 @@ function translate()
     .then(
         function response(response)
         {
-            return response.JSON;
+            return response.json();
         }
     )
     .then(
-        function parseJson(JSON)
+        function logJson(JSON)
         {
-            console.log(JSON)
+            output.innerText=JSON.contents.translated
         }
-    )
+    ).catch(errorHandler())
 }
