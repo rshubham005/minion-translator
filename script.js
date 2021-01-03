@@ -5,7 +5,7 @@ btn.addEventListener("click",translate);
 function errorHandler(error)
 {
     console.log("Some error occcured "+error)
-    alert("Some Error Occured please try after some time")
+    alert(error) 
 }
 function translate()
 {
