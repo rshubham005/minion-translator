@@ -4,8 +4,11 @@ var output= document.querySelector("#translated-text");
 btn.addEventListener("click",translate);
 function errorHandler(error)
 {
-    console.log("Some error occcured "+error)
+    if(error)
+    {
+        console.log("Some error occcured "+error)
     alert(error) 
+    }
 }
 function translate()
 {
